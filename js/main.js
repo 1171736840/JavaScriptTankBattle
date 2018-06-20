@@ -166,12 +166,12 @@ window.onkeydown = function(event){//挂载按下某键事件
 			//console.log(control.direction);
 		}	
 	}
-	//小键盘数字键1 97，小键盘数字键1 98
-	if(event.keyCode == 97){
+	//空格键32
+	if(event.keyCode == 32){
 		tank.fireStarter();
 	}
 }
-window.onkeyup = function(event){//挂载按下某键事件
+window.onkeyup = function(event){//挂载放开某键事件
 	//37左，38上，39右，40下
 	if(event.keyCode >= 37 && event.keyCode <= 40){
 		var keyValues = ["left","up","right","down"];
